@@ -17,6 +17,8 @@ sourceCompatibility = '1.8'
 dependencies{
 	testCompile library.junit
 	testCompile library.mockito_all
+	// http://fxexperience.com/controlsfx/
+	compile 'org.controlsfx:controlsfx:8.40.14'
 }
 
 /* Per default GRADLE stops the build if one single test fails. We want to have all tests executed. */
