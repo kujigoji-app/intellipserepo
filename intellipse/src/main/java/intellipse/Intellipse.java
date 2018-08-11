@@ -23,6 +23,7 @@ public class Intellipse extends Application {
 		sb.getButtons().addAll(new ToggleButton("a"),new ToggleButton("b"));
 		root.getChildren().add(b);
 		root.getChildren().add(l);
+
 		root.getChildren().add(sb);
 		sb.getToggleGroup().selectedToggleProperty().addListener((obs,o,n)->l.setText(((ToggleButton) n).getText()));
 		b.addEventHandler(ActionEvent.ACTION, e -> l.setText("world"));
